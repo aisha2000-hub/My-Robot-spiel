@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Robot</title>
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/7ad11a1981.js" crossorigin="anonymous"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Robot<i class="fas fa-robot"></i>Eddy</h1>
+
+    <!-- POSITION X ,Y-->
+    <div id = "posContainer">
+        Position X: <span id="posX">0 </span> // Position Y:<span id="posY"> 0 </span>  //
+        Direction:<span id="heading">EAST</span>
+        <span id="arrow"></span>
+        <span id="view"></span>
+    </div>
+
+  
+     <nav id="navButton">
+         <!-- Button für Move -->
+         <button id="moveButton" class="glow-on-hover" onclick="step()">MOVE</button>
+         <!-- Button für Rotation-->
+         <button id="rotateButton" class="glow-on-hover" onclick="rotate()">ROTATE </button>
+         <!-- Button für Reset -->
+         <button id="reset" class="glow-on-hover" onClick="window.location.href=window.location.href">RESET</button>
+
+    </nav>
+
+
+    <!--TODO: Eine Canvas -->
+    <canvas id="myCanvas" width="1000" height="600"></canvas>
+    <img id="robot" src="images/s-l300.jpg" alt="The robot" width="50" height="50">
+
+
+    <!-- JAVASCRIPT VERKNÜPFUNG-->
+    <script src="index.js">  </script>
+</body>
+</html>
